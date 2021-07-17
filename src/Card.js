@@ -1,16 +1,19 @@
 import React from 'react'
-import './App.css'
+import './App.css';
 
-const Card = () => {
+const Card = props => {
+    console.log(props)
     return (
         <div className="card">
-            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style={{ width: '100%' }} />
+            <img src={props.avatar} alt="Avatar" style={{ width: '100%' }} />
             <div className="container">
-                <h4><b>Christian Parker</b></h4>
-                <p>Software Engineer</p>
+                <h4><b>{props.name}</b></h4>
+                <p>{props.title}</p>
+                <p>{props.children}</p>
             </div>
         </div>
     )
 }
 
 export default Card
+
