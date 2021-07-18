@@ -19,19 +19,6 @@ function App() {
                 title={faker.name.jobTitle()}
             >{buttonsMarkup}
             </Card>
-            <Card
-                avatar={faker.image.avatar()}
-                name={`${faker.name.firstName()} ${faker.name.firstName()}`}
-                title={faker.name.jobTitle()}
-            >{buttonsMarkup}
-            </Card>
-            <Card
-                avatar={faker.image.avatar()}
-                name={`${faker.name.firstName()} ${faker.name.firstName()}`}
-                title={faker.name.jobTitle()}
-            >{buttonsMarkup}
-            </Card>
-
 
         </div>
     );
